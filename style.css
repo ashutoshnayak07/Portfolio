@@ -201,4 +201,33 @@ body {
   .footer p {
     font-size: 14px;
   }
+ @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
 
+    .hero h1 {
+      font-size: 36px;
+    }
+
+    .about {
+      flex-direction: column;
+    }
+
+    .about .photo {
+      margin: 0 auto 20px auto;
+    }
+
+    .skills ul {
+      justify-content: space-around;
+    }
+
+    .portfolio .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 480px) {
+    .portfolio .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
